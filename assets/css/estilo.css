@@ -45,5 +45,13 @@
 }
 
 .texto_personalizado {
-    @apply bg-[#40E164] text-black px-1 font-geist text-[25pt]
+    @apply bg-[#40E164] text-black px-1 font-geist
+}
+
+.subtitulo_main {
+    @apply text-3xl font-geist font-bold text-white
+}
+
+.texto_main {
+    @apply text-white font-extralight font-inter text-[11pt]
 }
