@@ -63,3 +63,23 @@
 .texto_destaque_lateral {
     @apply text-[#9C9696]
 }
+
+.card_funcionamento {
+    @apply bg-[#212121] border-2 border-[#2E2C2C] p-4 w-3/4 rounded-lg my-2
+}
+
+.topo_card_funcionamento {
+    @apply flex justify-between
+}
+
+.icone_card_funcionamento {
+    @apply text-white
+}
+
+.titulo_card_funcionamento {
+    @apply text-[#40E164] font-inter font-bold py-2.5
+}
+
+.texto_card_funcionamento {
+    @apply text-white font-inter font-extralight
+}
