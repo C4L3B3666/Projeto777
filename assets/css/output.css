@@ -205,6 +205,9 @@
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
+  .h-max {
+    height: max-content;
+  }
   .h-screen {
     height: 100vh;
   }
