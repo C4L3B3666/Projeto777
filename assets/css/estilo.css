@@ -91,3 +91,11 @@
 .texto_card_funcionamento {
     @apply text-white font-inter font-extralight
 }
+
+#secao2 {
+    @apply h-[720px] overflow-hidden transition-all duration-500
+}
+
+#secao2.secao2_expandida {
+    @apply h-[2160px] 
+}

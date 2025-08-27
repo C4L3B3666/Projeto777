@@ -255,6 +255,9 @@
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
   }
@@ -472,6 +475,18 @@
   --tw-font-weight: var(--font-weight-extralight);
   font-weight: var(--font-weight-extralight);
   color: var(--color-white);
+}
+#secao2 {
+  height: 720px;
+  overflow: hidden;
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 500ms;
+  transition-duration: 500ms;
+}
+#secao2.secao2_expandida {
+  height: 2160px;
 }
 @property --tw-font-weight {
   syntax: "*";
