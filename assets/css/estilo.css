@@ -65,7 +65,11 @@
 }
 
 .card_funcionamento {
-    @apply bg-[#212121] border-2 border-[#2E2C2C] p-4 w-3/4 rounded-lg my-2
+    @apply p-4 w-3/4 rounded-lg my-2 relative
+}
+
+.numero_card_funcionamento, .card_funcionamento {
+    @apply bg-[#212121] border-2 border-[#2E2C2C]
 }
 
 .topo_card_funcionamento {
@@ -74,6 +78,10 @@
 
 .icone_card_funcionamento {
     @apply text-white
+}
+
+.numero_card_funcionamento {
+    @apply p-5 font-geist text-[#40E164] rounded-full h-4 w-4 flex items-center justify-center font-bold text-2xl absolute -top-2 -right-2
 }
 
 .titulo_card_funcionamento {
