@@ -65,7 +65,7 @@
 }
 
 .card_funcionamento {
-    @apply p-4 w-3/4 rounded-lg my-2 relative
+    @apply p-4 w-3/4 rounded-lg my-2 relative z-1 h-[373px]
 }
 
 .numero_card_funcionamento, .card_funcionamento {
@@ -93,7 +93,18 @@
 }
 
 #secao2 {
-    @apply h-[720px] overflow-hidden transition-all duration-500
+    @apply transition-all duration-500 h-full;
+}
+
+
+.fade-edge::after { 
+    @apply overflow-hidden content-[''] absolute bottom-0 w-full h-[30px] z-[1] pointer-events-none 
+}
+
+
+.fade-edge::after {
+    right: 0;
+    background: linear-gradient(to top, #131313 10%, #131313 50%, transparent 100%);
 }
 
 #secao2.secao2_expandida {
