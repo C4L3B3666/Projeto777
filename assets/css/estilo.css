@@ -92,7 +92,6 @@
     @apply text-white font-inter font-extralight
 }
 
-
 .fade_edge::after {
     right: 0;
     background: linear-gradient(to top, #131313 10%, #131313 50%, transparent 100%);
@@ -100,4 +99,8 @@
 
 #secao2.secao2_expandida .fade_edge {
     @apply h-[2050px] 
+}
+
+.texto_efeito {
+    @apply text-[#2E2C2C] text-[14pt] font-inter text-center my-8 font-bold transition-colors duration-300 opacity-85
 }
