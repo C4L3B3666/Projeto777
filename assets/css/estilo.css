@@ -92,21 +92,12 @@
     @apply text-white font-inter font-extralight
 }
 
-#secao2 {
-    @apply transition-all duration-500 h-full;
-}
 
-
-.fade-edge::after { 
-    @apply overflow-hidden content-[''] absolute bottom-0 w-full h-[30px] z-[1] pointer-events-none 
-}
-
-
-.fade-edge::after {
+.fade_edge::after {
     right: 0;
     background: linear-gradient(to top, #131313 10%, #131313 50%, transparent 100%);
 }
 
-#secao2.secao2_expandida {
-    @apply h-[2160px] 
+#secao2.secao2_expandida .fade_edge {
+    @apply h-[2050px] 
 }
