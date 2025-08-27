@@ -405,10 +405,19 @@
 }
 .texto_main {
   font-family: var(--font-inter);
-  font-size: 11pt;
   --tw-font-weight: var(--font-weight-extralight);
   font-weight: var(--font-weight-extralight);
   color: var(--color-white);
+}
+.texto_lateral_main {
+  padding-block: calc(var(--spacing) * 1.5);
+  font-family: var(--font-inter);
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+}
+.texto_destaque_lateral {
+  color: #9C9696;
 }
 @property --tw-font-weight {
   syntax: "*";

@@ -53,5 +53,13 @@
 }
 
 .texto_main {
-    @apply text-white font-extralight font-inter text-[11pt]
+    @apply text-white font-extralight font-inter
+}
+
+.texto_lateral_main {
+    @apply font-inter py-1.5 font-bold text-white
+}
+
+.texto_destaque_lateral {
+    @apply text-[#9C9696]
 }
