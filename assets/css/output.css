@@ -544,6 +544,9 @@
   right: 0;
   background: linear-gradient(to top, #131313 10%, #131313 50%, transparent 100%);
 }
+#secao2 {
+  background: center / cover url('../img/bg_main.png') no-repeat;
+}
 #secao2.secao2_expandida .fade_edge {
   height: 2050px;
 }
