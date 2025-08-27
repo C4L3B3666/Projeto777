@@ -1,1 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+    --font-inter: "Inter", system-ui, sans-serif;
+    --font-geist: "Geist", system-ui, sans-serif;
+}
+
+.nav_mobile.clip {
+    clip-path: circle(100px at 90% -25%);
+    @apply pointer-events-none
+}
+
+.nav_mobile.clipX {
+    clip-path: circle(1000px at 90% -0);
+    @apply pointer-events-auto opacity-100
+}
+
+.nav_mobile.clipX .link_menu {
+    @apply opacity-100
+}
+
+.link_menu {
+    @apply text-white font-inter font-medium hover:text-[#40E164] active:hover:text-[#40E164] opacity-0 transition-opacity duration-700
+}
+
+.button {
+    @apply rounded-full shadow-[0_0_10px_#00ff88] bg-[#40E164] py-0.5 px-2 font-inter text-[11pt] font-medium text-white cursor-pointer
+}
+
+.button_secundary {
+    @apply bg-transparent shadow-none hover:text-[#40E164]
+}
+
+.nav_botoes {
+    @apply p-[0.3rem] rounded-full bg-[#212121] w-max border border-[#2E2C2C] shadow-[0_0_4px_#2E2C2C]
+}
+
+.linha_bar {
+    @apply bg-[#40E164] w-10 h-1 m-1 rounded-full my-1.5
+}
+
+.linha_bar:nth-child(2) {
+    @apply w-7 relative
+}
+
+.texto_personalizado {
+    @apply bg-[#40E164] text-black px-1 font-geist text-[25pt]
+}
