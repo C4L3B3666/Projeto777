@@ -138,6 +138,10 @@
     @apply font-inter text-white font-extralight
 }
 
+.secao_frase {
+    @apply py-8
+}
+
 .secao_frase p {
     @apply font-geist text-white text-[20pt] font-bold text-center
 }
