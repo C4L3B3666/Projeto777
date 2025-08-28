@@ -128,3 +128,12 @@
 .card_fundador .frase_fundador {
     @apply font-inter text-white font-extralight
 }
+
+.secao_frase p {
+    @apply font-geist text-white text-[20pt] font-bold text-center
+}
+
+.textoGradiente {
+    background: linear-gradient(90deg, #ffffff 0%, #e0e0e0 50%, #a0a0a0 100%);
+    @apply text-transparent bg-clip-text
+}

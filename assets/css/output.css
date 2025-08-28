@@ -607,6 +607,19 @@
   font-weight: var(--font-weight-extralight);
   color: var(--color-white);
 }
+.secao_frase p {
+  text-align: center;
+  font-family: var(--font-geist);
+  font-size: 20pt;
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+}
+.textoGradiente {
+  background: linear-gradient(90deg, #ffffff 0%, #e0e0e0 50%, #a0a0a0 100%);
+  background-clip: text;
+  color: transparent;
+}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
