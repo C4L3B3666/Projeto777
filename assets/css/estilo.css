@@ -108,3 +108,23 @@
 .texto_efeito {
     @apply text-[#2E2C2C] text-[14pt] font-inter text-center my-8 font-bold transition-colors duration-300 opacity-85
 }
+
+.card_fundador {
+    @apply bg-[#131313] border-2 border-[#2E2C2C] rounded-2xl w-[95%] overflow-hidden p-3 sticky text-center shadow-[0_0_20px_#000] z-0 my-6
+}
+.card_fundador .nome_fundador,
+.card_fundador .cargo_fundador {
+    @apply font-inter font-bold
+}
+
+.card_fundador .nome_fundador {
+    @apply  text-[#40E164] text-[13pt]
+}
+
+.card_fundador .cargo_fundador {
+    @apply  text-gray-400 text-[11pt] py-2
+}
+
+.card_fundador .frase_fundador {
+    @apply font-inter text-white font-extralight
+}
