@@ -118,7 +118,7 @@
 }
 
 .card_fundador {
-    @apply bg-[#131313] border-2 border-[#2E2C2C] rounded-2xl w-[90%] h-[570px] overflow-hidden p-3 sticky text-center shadow-[5px_0_15px_#000] z-0 my-6 top-20
+    @apply bg-[#131313] border-2 border-[#2E2C2C] rounded-2xl w-[90%] h-[570px] overflow-hidden p-3 sticky text-center shadow-[5px_0_15px_#000] z-0 my-6 top-20 transition-all duration-300 ease-linear
 }
 
 .efeito_card_fundador {
@@ -129,8 +129,12 @@
     @apply left-2 bottom-2
 }
 
+.card_fundador:hover .imagem_fundador {
+    @apply grayscale-0
+}
+
 .card_fundador .imagem_fundador {
-    @apply grayscale-100 hover:grayscale-0
+    @apply grayscale-100 transition-all duration-500 ease-linear
 }
 
 .card_fundador .nome_fundador,
