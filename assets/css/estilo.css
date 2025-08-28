@@ -134,6 +134,5 @@
 }
 
 .textoGradiente {
-    background: linear-gradient(90deg, #ffffff 0%, #e0e0e0 50%, #a0a0a0 100%);
-    @apply text-transparent bg-clip-text
+    @apply text-transparent bg-clip-text bg-[linear-gradient(90deg,_#ffffff_0%,_#e0e0e0_50%,_#a0a0a0_100%)]
 }
