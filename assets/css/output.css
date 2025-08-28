@@ -457,10 +457,22 @@
   width: calc(var(--spacing) * 10);
   border-radius: calc(infinity * 1px);
   background-color: #40E164;
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 300ms;
+  transition-duration: 300ms;
+}
+.menu_bar.ativo .linha_bar:nth-child(1) {
+  position: relative;
+  width: calc(var(--spacing) * 7);
 }
 .linha_bar:nth-child(2) {
   position: relative;
   width: calc(var(--spacing) * 7);
+}
+.menu_bar.ativo .linha_bar:nth-child(2) {
+  width: calc(var(--spacing) * 10);
 }
 .texto_personalizado {
   background-color: #40E164;

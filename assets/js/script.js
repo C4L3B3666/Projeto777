@@ -2,6 +2,7 @@ var menu_bar = document.querySelector(".menu_bar")
 menu_bar.addEventListener("click", ()=> {
     document.querySelector(".nav_mobile").classList.toggle("clip")
     document.querySelector(".nav_mobile").classList.toggle("clipX")
+    menu_bar.classList.toggle("ativo")
 })
 
 var ver_regras = document.querySelector(".button_ver_regras")

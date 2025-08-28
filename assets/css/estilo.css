@@ -37,11 +37,19 @@
 }
 
 .linha_bar {
-    @apply bg-[#40E164] w-10 h-1 m-1 rounded-full my-1.5
+    @apply bg-[#40E164] w-10 h-1 m-1 rounded-full my-1.5 transition-all duration-300
+}
+
+.menu_bar.ativo .linha_bar:nth-child(1) {
+    @apply w-7 relative
 }
 
 .linha_bar:nth-child(2) {
     @apply w-7 relative
+}
+
+.menu_bar.ativo .linha_bar:nth-child(2) {
+    @apply w-10
 }
 
 .texto_personalizado {
@@ -112,6 +120,7 @@
 .card_fundador {
     @apply bg-[#131313] border-2 border-[#2E2C2C] rounded-2xl w-[95%] h-[570px] overflow-hidden p-3 sticky text-center shadow-[0_0_20px_#000] z-0 my-6 top-20
 }
+
 .card_fundador .nome_fundador,
 .card_fundador .cargo_fundador {
     @apply font-inter font-bold
