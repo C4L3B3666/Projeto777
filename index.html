@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="pt-AO">
+<html lang="pt-AO" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
+    <meta name="color-scheme" content="dark">
     <link rel="stylesheet" href="assets/css/output.css">
     <title>777PY | Seu Palpite, a nossa ciência.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,26 +11,26 @@
     <script src="assets/js/script.js" defer></script>
 </head>
 <body class="bg-[#131313]">
-    <header class="menu bg-[#12121260] h-16 flex items-center justify-between py-10 fixed w-screen px-6 backdrop-blur-sm z-[2]">
+    <header class="menu bg-[#12121260] h-16 flex items-center justify-between py-6 fixed w-screen px-6 backdrop-blur-sm z-[2]">
         <nav class="z-[2]">
-            <a href="#"><img src="assets/img/logo.png" alt="logo_777py" srcset="" class="w-22"></a>
+            <a href="./"><img src="assets/img/logo.png" alt="logo_777py" srcset="" class="w-22"></a>
         </nav>
-        <nav class="nav_mobile absolute bg-black h-screen z-1 right-0 w-screen top-0 flex flex-col justify-around items-center pt-9 clip transition-all duration-700">
-            <a href="#" class="link_menu">Página Inicial</a>
-            <a href="#" class="link_menu">Como Funciona?</a>
-            <a href="#" class="link_menu">Posso Participar?</a>
-            <a href="#" class="link_menu">Quem Somos?</a>
+        <nav class="menu_mobile absolute bg-black h-screen z-1 right-0 w-screen top-0 flex flex-col justify-around items-center pt-9 transition-all duration-700 pointer-events-none">
+            <a href="#" class="link_menu" target="_top">Página Inicial</a>
+            <a href="#como_funciona" class="link_menu">Como Funciona?</a>
+            <a href="#posso_participar" class="link_menu">Posso Participar?</a>
+            <a href="#conheca_777" class="link_menu">Quem Somos?</a>
             <a href="#" class="link_menu">Contato</a>
         </nav>
         <nav class="hidden">
             <nav class="nav_botoes">
                 <a href="#"><button class="button button_secundary">Contatar</button></a>
-                <a href="#"><button class="button">Enviar Palpite <i class="fa-solid fa-paper-plane"></i></button></a>
+                <a href="#"><button class="button">Palpitar Agora <i class="fa-solid fa-paper-plane"></i></button></a>
             </nav>
         </nav>
         <nav class="flex items-center gap-0.5 z-[2]">
             <nav class="nav_botoes">
-                <a href="#"><button class="button">Enviar Palpite <i class="fa-solid fa-paper-plane"></i></button></a>
+                <a href="#"><button class="button">Palpitar Agora <i class="fa-solid fa-paper-plane"></i></button></a>
             </nav>
             <nav class="menu_bar p-1.5 cursor-pointer">
                 <div class="linha_bar"></div>
@@ -37,6 +38,7 @@
             </nav>
         </nav>
     </header>
+
     <main class="px-6">
         <section class="secao_hero h-max pt-24">
             <h1 class="text-4xl font-inter text-white font-bold">Prevemos o <span class="texto_personalizado text-[25pt]">futuro!</span> O seu <span class="texto_personalizado text-[25pt]">palpite</span>, a nossa ciência.</h1>
@@ -44,7 +46,7 @@
             <nav class="flex justify-center items-center pt-2">
                 <nav class="nav_botoes">
                     <a href="#"><button class="button button_secundary">Começar Agora</button></a>
-                    <a href="#"><button class="button">Assistir Vídeo <i class="fa-solid fa-play"></i></button></a>
+                    <a href="#assistir_video"><button class="button">Assistir Vídeo <i class="fa-solid fa-play"></i></button></a>
                 </nav>
             </nav>
             <nav class="flex items-center justify-center py-6">
@@ -52,7 +54,7 @@
             </nav>
         </section>
 
-        <section id="secao2" class="relative">
+        <section id="como_funciona">
             <div>
                 <h2 class="subtitulo_main"><span class="texto_personalizado">Saiba</span> como Funciona.</h2>
             </div>
@@ -60,7 +62,7 @@
                 <p class="texto_main"><span class="font-bold">Apenas 1 erro é permitido</span> - ele reduz o seu prémio final. Mas, <span class="font-bold">o segundo erro te elimina</span> imediatamente do desafio. <span class="font-bold text-[#40E164]">Mas atenção:</span> Se chegares até à fase Nzambi sem errar nenhuma vez, ganhas um <span class="font-bold">bónus especial</span>. E se, venceres às 3 fases sem errar, <span class="font-bold">além de ganhares 2.5 milhões de kwanzas</span>, o teu <span class="font-bold">bónus secreto será duplicado!</span> Estamos à tua espera — e acreditamos que o teu palpite vale ouro. <span class="font-bold text-[#40E164]">777</span> é um verdadeiro teste de visão, estratégia e coragem. Aqui, cada escolha conta, cada detalhe importa.</p>
                 <p class="texto_lateral_main">Acreditamos em você e na tua estratégia que o ajudará a <span class="texto_destaque_lateral">ganhar milhões de kwanzas</span> em 10 dias. Junte-se a <span class="texto_destaque_lateral">777PY</span> e mostre o poder da tua <span class="texto_destaque_lateral">intuição, raciocínio e palpites.</span> Transforme em conquistas reais e lucrativas.</p>
             </div>
-            <div class="flex items-center justify-start flex-col h-[373px] overflow-hidden after:overflow-hidden after:content-[''] after:absolute after:bottom-0 after:w-full after:h-[30px] after:z-[1] after:pointer-events-none transition-all duration-500 fade_edge">
+            <div class="content_cards_funcionamento">
                 <div class="card_funcionamento">
                     <nav class="topo_card_funcionamento">
                         <nav class="icone_card_funcionamento">
@@ -170,7 +172,7 @@
             <button class="button button_ver_regras">Ver Regras Completa</button>
         </div>
 
-        <section>
+        <section id="posso_participar">
             <div>
                 <h2 class="subtitulo_main"><span class="texto_personalizado">Quem Pode</span> Transformar Palpites em Milhões.</h2>
             </div>
@@ -181,7 +183,7 @@
 
             <div class="flex items-center justify-center flex-col">
                 <div>
-                    <p class="texto_efeito">Existem milhares de apostadores com potencial escondido - pessoas que usam raciocínio e uma leitura de incrível de jogos, mas que nunca foram reconhecidas por isso. A 777 chegou e seus palpites são tratados com resultados que merecem.</p>
+                    <p class="texto_efeito ativo">Existem milhares de apostadores com potencial escondido - pessoas que usam raciocínio e uma leitura de incrível de jogos, mas que nunca foram reconhecidas por isso. A 777 chegou e seus palpites são tratados com resultados que merecem.</p>
                     <p class="texto_efeito">777PY é muito mais do que um projeto. É um movimento onde um o apostador deixa de ser visto como um mero jogador de sorte, e passa a ser reconhecido como estrategista e jogador analista. Lembre-se, o teu palpite vale ouro!</p>
                     <p class="texto_efeito">Acreditamos no teu talento, na tua leitura de jogo, na tua coragem e na tua vontade de ser milionário em 10 dias. Entra nesse desafio com confiança, mostre o teu raciocínio.</p>
                 </div>
@@ -191,7 +193,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="conheca_777">
             <div>
                 <h2 class="subtitulo_main">Conheça a <span class="texto_personalizado">777PY.</span></h2>
             </div>
@@ -201,85 +203,147 @@
             </div>
             <div class="flex items-center justify-center flex-col gap-4">
                 <div class="card_fundador">
-                    <div class="efeito_card_fundador"></div>
+                    <div class="content_efeito_card_fundador">
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                    </div>
                     <img src="assets/img/calebe.png" alt="imagem de calebe lukombo" srcset="" class="imagem_fundador">
                     <h5 class="nome_fundador">Calebe "CL" Lukombo</h6>
                     <h6 class="cargo_fundador">Diretor Executivo (CEO) e fundador</h6>
                     <p class="frase_fundador">Criamos a 777PY porque acreditamos que ciência também é coragem. 777 é um movimento, o ponto onde a estatística encara a arrogância e a pura anti-estatística.</p>
-                    <div class="efeito_card_fundador efeito_card_fundador_2"></div>
+                    <div class="content_efeito_card_fundador_2">
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                    </div>
                 </div>
 
                 <div class="card_fundador">
-                    <div class="efeito_card_fundador"></div>
+                    <div class="content_efeito_card_fundador">
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                    </div>
                     <img src="assets/img/maria.png" alt="imagem de calebe lukombo" srcset="" class="imagem_fundador">
                     <h5 class="nome_fundador">Maria Lumengo</h6>
                     <h6 class="cargo_fundador">Co-Diretora Executiva (Co-CEO) e fundadora</h6>
                     <p class="frase_fundador">Onde dizem que é sorte, não há somente a Lei dos Grandes Números — há também inteligência feminina. Os dados não mentem, e nem as mulheres que os dominam.</p>
-                    <div class="efeito_card_fundador efeito_card_fundador_2"></div>
+                    <div class="content_efeito_card_fundador_2">
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                    </div>
                 </div>
 
                 <div class="card_fundador">
-                    <div class="efeito_card_fundador"></div>
+                    <div class="content_efeito_card_fundador">
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                    </div>
                     <img src="assets/img/adilson.png" alt="imagem de calebe lukombo" srcset="" class="imagem_fundador">
                     <h5 class="nome_fundador">Adilson "AL" Lukombo</h6>
-                    <h6 class="cargo_fundador">Diretor de Operações (COO) e fundador</h6>
+                    <h6 class="cargo_fundador">Diretor de Operações (COO) e Co-fundador</h6>
                     <p class="frase_fundador">Na 777, mostraremos que o impossível só é impossível até alguém fazê-lo. Mostraremos que existem pessoas capazes de encarar, desafiar e vencer o improvável..</p>
-                    <div class="efeito_card_fundador efeito_card_fundador_2"></div>
+                    <div class="content_efeito_card_fundador_2">
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                    </div>
                 </div>
 
                 <div class="card_fundador">
-                    <div class="efeito_card_fundador"></div>
+                    <div class="content_efeito_card_fundador">
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                    </div>
                     <img src="assets/img/ag.png" alt="imagem de calebe lukombo" srcset="" class="imagem_fundador">
                     <h5 class="nome_fundador">Aguinaldo "AG" Jacob</h6>
-                    <h6 class="cargo_fundador">Diretor de Dados (CDO), Consultor e fundador</h6>
+                    <h6 class="cargo_fundador">Diretor de Dados (CDO), Consultor e Co-fundador</h6>
                     <p class="frase_fundador">Temos o desejo de tornar as previsões precisas. Trazer valor aos palpiteiros, dar-lhes a chance de serem ícones e não serem vistos como meros jogadores ou apostadores.</p>
-                    <div class="efeito_card_fundador efeito_card_fundador_2"></div>
+                    <div class="content_efeito_card_fundador_2">
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                    </div>
                 </div>
 
                 <div class="card_fundador">
-                    <div class="efeito_card_fundador"></div>
+                    <div class="content_efeito_card_fundador">
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                    </div>
                     <img src="assets/img/nkosi.png" alt="imagem de calebe lukombo" srcset="" class="imagem_fundador">
                     <h5 class="nome_fundador">Nkosi Simão</h6>
-                    <h6 class="cargo_fundador">Diretor de Análise de Dados, Diretor de Marketing (CMO) e fundador</h6>
+                    <h6 class="cargo_fundador">Diretor de Análise de Dados, Diretor de Marketing (CMO) e Co-fundador</h6>
                     <p class="frase_fundador">Se estamos aqui é porque ousamos sonhar mais alto do que a média, ousamos desafiar a lógica e o destino. E venceremos com que estiver connosco.</p>
-                    <div class="efeito_card_fundador efeito_card_fundador_2"></div>
+                    <div class="content_efeito_card_fundador_2">
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                    </div>
                 </div>
 
                 <div class="card_fundador">
-                    <div class="efeito_card_fundador"></div>
+                    <div class="content_efeito_card_fundador">
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                    </div>
                     <img src="assets/img/alex.png" alt="imagem de calebe lukombo" srcset="" class="imagem_fundador">
                     <h5 class="nome_fundador">Alexandre Afonso</h6>
-                    <h6 class="cargo_fundador">Diretor de Recursos Humanos (CHRO), Co-Diretor de Marketing (Co-CMO) e fundador</h6>
+                    <h6 class="cargo_fundador">Diretor de Recursos Humanos (CHRO), Co-Diretor de Marketing (Co-CMO) e Co-fundador</h6>
                     <p class="frase_fundador">Somos jovens negros, africanos, sonhadores e criadores de um movimento ousado e transformador. Somos angolanos, somos o futuro, somos ciência!</p>
-                    <div class="efeito_card_fundador efeito_card_fundador_2"></div>
+                    <div class="content_efeito_card_fundador_2">
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                    </div>
                 </div>
 
                 <div class="card_fundador">
-                    <div class="efeito_card_fundador"></div>
+                    <div class="content_efeito_card_fundador">
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                    </div>
                     <img src="assets/img/naco.png" alt="imagem de calebe lukombo" srcset="" class="imagem_fundador">
-                    <h5 class="nome_fundador">Jabez "JB" inácio</h6>
-                    <h6 class="cargo_fundador">Diretor de Produto (CPO) e fundador</h6>
+                    <h5 class="nome_fundador">Nacho</h6>
+                    <h6 class="cargo_fundador">Diretor de Produto (CPO) e Co-fundador</h6>
                     <p class="frase_fundador">777 é feita de pessoas que desafiam os limites durante 10 dias.</p>
-                    <div class="efeito_card_fundador efeito_card_fundador_2"></div>
+                    <div class="content_efeito_card_fundador_2">
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                    </div>
                 </div>
 
                 <div class="card_fundador">
-                    <div class="efeito_card_fundador"></div>
+                    <div class="content_efeito_card_fundador">
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                        <div class="efeito_card_fundador"></div>
+                    </div>
                     <img src="assets/img/nalita2.png" alt="imagem de calebe lukombo" srcset="" class="imagem_fundador">
                     <h5 class="nome_fundador">Nalita Kiambi Rodrigues</h6>
-                    <h6 class="cargo_fundador">Diretora Financeira (CFO), Co-Diretora de Recursos Humanos (Co-CHRO), Co-Diretora de Marketing (Co-CMO) e fundadora</h6>
+                    <h6 class="cargo_fundador">Diretora Financeira (CFO), Co-Diretora de Recursos Humanos (Co-CHRO), Co-Diretora de Marketing (Co-CMO) e Co-fundadora</h6>
                     <p class="frase_fundador">Acredito que com o 777, com esse movimento podemos inspirar mais mulheres angolanas a se apaixonarem por números, códigos e pelo poder da ciência</p>
-                    <div class="efeito_card_fundador efeito_card_fundador_2"></div>
+                    <div class="content_efeito_card_fundador_2">
+                        <div class="efeito_card_fundador"></div>
+                    </div>
                 </div>
  
             </div>
         </section>
 
-        <section class="secao_frase">
+        <div class="secao_frase">
             <p>O objetivo é tornar as <span class="textoGradiente">previsões</span> desportivas, climáticas e políticas <span class="textoGradiente">precisas</span> e <span class="textoGradiente">estatisticamente confiáveis.</span></p>
-        </section>
+        </div>
 
-        <section>
+        <section id="perguntas_frequentes">
             <div>
                 <h2 class="subtitulo_main"><span class="texto_personalizado">Perguntas</span> Frequentes.</h2>
             </div>
@@ -287,11 +351,158 @@
                 <p class="texto_main">Essa é a nossa seção de <span class="font-bold">Perguntas Frequentes (FAQ).</span> Na 777PY, priorizamos a clareza, a transparência e o conhecimento científico. Sabemos que projetos inovadores como o nosso podem gerar dúvidas — e é exatamente por isso que criamos este espaço. Nossa equipe está pronta para responder todas as suas perguntas e fornecer suporte necessário para que você possa aproveitar ao máximo tudo o que o 777 tem a oferecer.</p>
                 <p class="texto_lateral_main">No entanto, naturalmente, entendemos que cada usuário tem necessidades específicas. E, estamos sempre prontos para ajudar você, caso a sua dúvida não esteja na área abaixo ou deseja saber mais sobre nosso projeto, nossa pesquisa ou qualquer outro aspecto do 777, não hesite e entre em contato connosco pelos canais oficiais que você preferir</p>
             </div>
-            <div class="flex items-center justify-center flex-col gap-4">
-                <h2 class="text-[#40E164] font-geist text-4xl font-bold">Brevemente...</h2>
+            <div class="flex items-center justify-center flex-col gap-4 relative">
+                <div class="carousel_container">
+                    <button class="carousel_button button prev" aria-label="Anterior">&#10094;</button>
+
+                    <div class="contentor_card_pergunta">
+                        <div class="card_pergunta">
+                            <div class="efeito_card_pergunta"></div>
+                            <p class="titulo_card_pergunta">É seguro usar 777PY? Não é ilegal ou burla?</p>
+                            <p class="texto_card_pergunta">Sim, é totalmente seguro. O 777PY não é uma casa de apostas ou jogo de azar, e sim uma projeto científico que promove uma pesquisa e um desafio baseado em palpites e estatísticas. Não há nada ilegal envolvido e você não precisará pagar absolutamente nada.</p>
+                        </div>
+
+                        <div class="card_pergunta">
+                            <div class="efeito_card_pergunta"></div>
+                            <p class="titulo_card_pergunta">Seu eu vencer, devo pagar alguma taxa?</p>
+                            <p class="texto_card_pergunta">Não! O prémio é seu por mérito e é totalmente indivisível. A 777 não cobra nenhuma comissão sobre os valores ganhos. O único compromisso que pedimos é o seu palpite certeiro e a sua melhor estratégia.</p>
+                        </div>
+
+                        <div class="card_pergunta">
+                            <div class="efeito_card_pergunta"></div>
+                            <p class="titulo_card_pergunta">Quanto custa para participar?</p>
+                            <p class="texto_card_pergunta">0.00 Kzs! A participação no desafio é totalmente gratuita. Também não é necessário pagar nada para enviar os seus palpites. Em momento algum você precisará pagar para participar. ZERO RISCO, ZERO APOSTAS - Apenas estratégia.</p>
+                        </div>
+
+                        <div class="card_pergunta">
+                            <div class="efeito_card_pergunta"></div>
+                            <p class="titulo_card_pergunta">Sou menor de idade. Posso participar?</p>
+                            <p class="texto_card_pergunta">Sim! Todos têm a chance de transformar palpite em milhões. Não há proibições de idade, género, habilidades ou preferências de apostas. O mercado das apostas é proibido para menores de idade e o 777 não é uma casa de apostas, é uma pesquisa cientifíca.</p>
+                        </div>
+
+                        <div class="card_pergunta">
+                            <div class="efeito_card_pergunta"></div>
+                            <p class="titulo_card_pergunta">O que será feito com os palpites que eu mandar?</p>
+                            <p class="texto_card_pergunta">Nessa fase (t=0), os palpites enviado por si, serão usados exclusivamente para aprimorar e treinar o nosso software de predições desportivas. Acreditamos que com seus palpites podemos ajudar a prever eventos usando a estatística.</p>
+                        </div>
+
+                        <div class="card_pergunta">
+                            <div class="efeito_card_pergunta"></div>
+                            <p class="titulo_card_pergunta">O 777 pertence a alguma casa de aposta?</p>
+                            <p class="texto_card_pergunta">É um projeto independente e 100% científico. Não somos uma casa de aposta, não promovemos casas de apostas ou jogos de azar e não possuimos qualquer filiação ou conexão com alguma casa de aposta ou empresas similares.</p>
+                        </div>
+
+                        <div class="card_pergunta">
+                            <div class="efeito_card_pergunta"></div>
+                            <p class="titulo_card_pergunta">Quantos jogos colocar e em qual casa de aposta?</p>
+                            <p class="texto_card_pergunta">Você é livre para escolher qualquer casa de apostas. Quanto à quantidade, recomendamos um número de jogos reduzidos para garantir equilíbrio entre risco e retorno. É uma recomendação e não é obrigatório.</p>
+                        </div>
+
+                        <div class="card_pergunta">
+                            <div class="efeito_card_pergunta"></div>
+                            <p class="titulo_card_pergunta">Quais modalidades e mercados posso usar nos meus palpites?</p>
+                            <p class="texto_card_pergunta">Você pode criar palpites nas modalidades de futebol, boxe e basquetebol. Escolha qualquer mercado de aposta (1x2, total de golos/pontos, handicap, ambas marcam, etc) e monte apostas únicas, múltiplas ou construídas</p>
+                        </div>
+
+                        <div class="card_pergunta">
+                            <div class="efeito_card_pergunta"></div>
+                            <p class="titulo_card_pergunta">Posso participar mais de uma vez?</p>
+                            <p class="texto_card_pergunta">Essa é uma chance única e exclusiva, por isso, as vagas são limitadas e extremamente concorridas. Mas, pode enviar novos palpites sempre que houver uma nova rodada de desafio ativa ou quando a nossa equipe solicitar. Fique atento às datas e as novas rodadas!</p>
+                        </div>
+
+                        <div class="card_pergunta">
+                            <div class="efeito_card_pergunta"></div>
+                            <p class="titulo_card_pergunta">Devo enviar os meus dados pessoais?</p>
+                            <p class="texto_card_pergunta">Em qualquer fase do desafio poderemos solicitar seus dados pessoais, para a sua identificação, acompanhamento diário, metódos de pagamentos ou atribuição dos prémios. Seus dados estarão seguros e usaremos exclusivamente para esses fins. Consulte a nossa Política de Privacidade.</p>
+                        </div>
+
+                        <div class="card_pergunta">
+                            <div class="efeito_card_pergunta"></div>
+                            <p class="titulo_card_pergunta">O que acontece se eu errar os palpites?</p>
+                            <p class="texto_card_pergunta">Você poderá estar imediatamente desqualificado e não será considerado para o prémio até qua novas rodadas sejam abertas ou a nossa equipe poderá considerar o seu desempenho elegível para uma segunda chance.</p>
+                        </div>
+
+                        <div class="card_pergunta">
+                            <div class="efeito_card_pergunta"></div>
+                            <p class="titulo_card_pergunta">O desafio é somente desportivo?</p>
+                            <p class="texto_card_pergunta">Não! Mas, na fase inicial (t=0), a pesquisa é exclusivamente desportivas. Os desafios para as predições em eventos climáticos e políticos serão anunciados brevemente pelos canais oficiais da nossa startup.</p>
+                        </div>
+
+                        <div class="card_pergunta">
+                            <div class="efeito_card_pergunta"></div>
+                            <p class="titulo_card_pergunta">Qual é a garantia de que vou receber o prémio?</p>
+                            <p class="texto_card_pergunta">Credibilidade é a nossa marca. Todos os prémios são pagos pontualmente com comprovativos públicos e transparência total. Confiança se constroí com atitudes - e nós mostraremos isso a cada rodada. Na 777PY quem acerta, ganha de verdade.</p>
+                        </div>
+
+                        <div class="card_pergunta">
+                            <div class="efeito_card_pergunta"></div>
+                            <p class="titulo_card_pergunta">Quais são os requisitos para leventar o prémio?</p>
+                            <p class="texto_card_pergunta">É simples, rápido e seguro! Entraremos diretamente em contato contigo. Usaremos os seus dados para a sua identificação e o metódo de pagamento escolhido. A entrega do cheque será feita presencialmente na nossa startup.</p>
+                        </div>
+
+                        <div class="card_pergunta">
+                            <div class="efeito_card_pergunta"></div>
+                            <p class="titulo_card_pergunta">O que acontece se houver mais de 1 vencedor?</p>
+                            <p class="texto_card_pergunta">O prémio é único, fixo e indivisível! Cada vencedor receberá 2.500.000Kzs independentemente do quantos vencedores houver. Jamais haverá redução ou divisão do valor em caso de múltiplos vencedores.</p>
+                        </div>
+                    </div>
+                    <button class="carousel_button button next" aria-label="Próximo">&#10095;</button>
+                </div>
+                <button class="button mt-3.5">Priorizamos a clareza e o conhecimento</button>
             </div>
         </section>
+
+        <section id="assistir_video">
+            <div class="secao_frase">
+                <p>Assista o <span class="textoGradiente">vídeo</span> com a <span class="textoGradiente">AvA666_</span>, <span class="textoGradiente">IA</span> desenvolvida pela <span class="textoGradiente">equipe 777</span></p>
+            </div>
+            <div class="py-4">
+                <video src="assets/video/video777py.mp4"></video>
+                <nav class="flex items-center justify-between my-3">
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-backward icone_video"></i>
+                        <i class="fa-solid fa-play icone_video"></i>
+                        <i class="fa-solid fa-forward icone_video"></i>
+                        <i class="fa-solid fa-expand icone_video"></i>
+                    </div>
+                    <div>
+                        <a href="#"><button class="font-bold text-[#40E164] font-geist border-2 p-1 pr-4 border-[#40E164] cursor-pointer hover:bg-[#40E164] hover:text-white opacity-75 hover:opacity-100 transition-all duration-1000" style="border-radius: 30% 90% 70% 30% / 33% 18% 82% 67%;">Baixar Vídeo</button></a>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <div class="secao_frase">
+            <p>Sua chance de <span class="textoGradiente">transformar</span> <span class="textoGradiente">palpites</span> em <span class="text-[#40E164]">milhões</span> em apenas <span class="textoGradiente">10 dias.</span></span></p>
+        </div>
+
+        <footer class="flex flex-col items-center relative overflow-hidden">
+            <div class="efeito_luz efeito_luz_rodape"></div>
+            <div>
+                <a href="./"><img src="assets/img/logo.png" alt="" srcset="" class="w-32"></a>
+            </div>
+            <nav class="font-inter text-[11pt] text-gray-400 flex flex-wrap gap-3.5 items-center justify-center mt-2.5">
+                <a href="#" class="hover:underline">Termos e Condições</a>
+                <a href="#" class="hover:underline">Política de Privacidade</a>
+                <a href="#perguntas_frequentes" class="hover:underline">Perguntas Frequentes</a>
+                <a href="#como_funciona" class="hover:underline">Como Funciona 777</a>
+            </nav>
+            <div class="my-4">
+                <div class="flex items-center justify-between">
+                    <small class="text-white font-inter font-medium w-max">Luanda, Angola</small>
+                    <div class="flex items-center gap-1.5">
+                        <a href="#" rel="noopener"><i class="fa-solid fa-paper-plane social_rodape"></i></a>
+                        <a href="#" rel="noopener"><i class="fa-solid fa-paper-plane social_rodape"></i></a>
+                        <a href="#" rel="noopener"><i class="fa-solid fa-paper-plane social_rodape"></i></a>
+                        <a href="#" rel="noopener"><i class="fa-solid fa-paper-plane social_rodape"></i></a>
+                        <a href="#" rel="noopener"><i class="fa-solid fa-paper-plane social_rodape"></i></a>
+                        <a href="#" rel="noopener"><i class="fa-solid fa-phone social_rodape"></i></a>
+                    </div>
+                </div>
+                <small class="text-center flex items-center justify-center text-white font-geist mt-4 font-extralight">&copy;2025 — <span class="font-bold font-inter">777PY</span> — Todos os direitos reservados</small>
+            </div>
+            <a href="#" target="_top"><button class="button mt-4 mb-5 animate-bounce">Me ajude a subir!</button></a>
+        </footer>
     </main>
-    
 </body>
 </html>
