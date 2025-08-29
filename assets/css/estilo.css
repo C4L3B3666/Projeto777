@@ -200,7 +200,7 @@ body::-webkit-scrollbar-track {
 }
 
 .contentor_card_pergunta {
-    @apply flex overflow-hidden scroll-smooth py-4 items-center snap-mandatory before:left-0 before:content-[''] before:absolute before:top-0 before:h-full before:w-10 before:bg-[linear-gradient(to_right,_#131313_10%,_#131313_30%,_#131313_50%,_transparent_100%)] after:right-0 after:content-[''] after:absolute after:top-0 after:h-full after:w-10 before:z-[1] after:bg-[linear-gradient(to_left,_#131313_10%,_#131313_30%,_#131313_50%,_transparent_100%)]
+    @apply flex overflow-hidden scroll-smooth py-4 items-center snap-mandatory before:left-0 before:content-[''] before:absolute before:top-0 before:h-full before:w-10 before:bg-[linear-gradient(to_right,_#131313_10%,_#131313_30%,_#131313_50%,_transparent_100%)] after:right-0 after:content-[''] after:absolute after:top-0 after:h-full after:w-4 before:z-[1] after:bg-[linear-gradient(to_left,_#131313_10%,_#131313_30%,_#131313_50%,_transparent_100%)]
 }
 
 .carousel_button {
