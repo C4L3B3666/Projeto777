@@ -8,8 +8,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-700: oklch(50.5% 0.213 27.518);
-    --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-black: #000;
     --color-white: #fff;
@@ -871,7 +869,7 @@ body::-webkit-scrollbar-track {
   }
   &::before {
     content: var(--tw-content);
-    background-image: linear-gradient(to right, #131313 10%, #131313 30%, #131313 50%, transparent 100%);
+    background-image: linear-gradient(to right, #131313 0%, #131313 30%, #131313 5%, transparent 100%);
   }
   &::before {
     content: var(--tw-content);
@@ -892,6 +890,10 @@ body::-webkit-scrollbar-track {
   }
   &::after {
     content: var(--tw-content);
+    z-index: 1;
+  }
+  &::after {
+    content: var(--tw-content);
     height: 100%;
   }
   &::after {
@@ -900,7 +902,7 @@ body::-webkit-scrollbar-track {
   }
   &::after {
     content: var(--tw-content);
-    background-image: linear-gradient(to left, #131313 10%, #131313 30%, #131313 50%, transparent 100%);
+    background-image: linear-gradient(to left, #131313 0%, #131313 30%, #131313 5%, transparent 100%);
   }
   &::after {
     content: var(--tw-content);
@@ -929,10 +931,10 @@ body::-webkit-scrollbar-track {
   position: relative;
   z-index: 0;
   margin: calc(var(--spacing) * 2);
-  margin-inline: calc(var(--spacing) * 11);
+  margin-inline: calc(var(--spacing) * 5);
   margin-bottom: calc(var(--spacing) * 6);
   height: calc(var(--spacing) * 72);
-  min-width: 351px;
+  min-width: 341px;
   scroll-snap-align: start;
   border-radius: var(--radius-lg);
   border-style: var(--tw-border-style);

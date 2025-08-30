@@ -200,7 +200,7 @@ body::-webkit-scrollbar-track {
 }
 
 .contentor_card_pergunta {
-    @apply flex overflow-hidden scroll-smooth py-4 items-center snap-mandatory before:left-0 before:content-[''] before:absolute before:top-0 before:h-full before:w-10 before:bg-[linear-gradient(to_right,_#131313_10%,_#131313_30%,_#131313_50%,_transparent_100%)] after:right-0 after:content-[''] after:absolute after:top-0 after:h-full after:w-2 before:z-[1] after:bg-[linear-gradient(to_left,_#131313_10%,_#131313_30%,_#131313_50%,_transparent_100%)]
+    @apply flex overflow-hidden scroll-smooth py-4 items-center snap-mandatory before:left-0 before:content-[''] before:absolute before:top-0 before:h-full before:w-10 before:bg-[linear-gradient(to_right,_#131313_0%,_#131313_30%,_#131313_5%,_transparent_100%)] after:right-0 after:content-[''] after:absolute after:top-0 after:h-full after:w-10 before:z-[1] after:bg-[linear-gradient(to_left,_#131313_0%,_#131313_30%,_#131313_5%,_transparent_100%)] after:z-[1]
 }
 
 .carousel_button {
@@ -216,7 +216,7 @@ body::-webkit-scrollbar-track {
 }
 
 .card_pergunta  {
-    @apply min-w-[351px] p-4 m-2 mb-6 mx-11 rounded-lg border-2 border-[#075719] shadow-[6px_0_3px_#000] h-72 snap-start relative z-0
+    @apply min-w-[341px] p-4 m-2 mb-6 mx-5 rounded-lg border-2 border-[#075719] shadow-[6px_0_3px_#000] h-72 snap-start relative z-0
 }
 
 .efeito_card_pergunta {
