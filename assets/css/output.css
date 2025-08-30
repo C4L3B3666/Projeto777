@@ -336,6 +336,9 @@
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
   }
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
+  }
   .pt-9 {
     padding-top: calc(var(--spacing) * 9);
   }
@@ -435,6 +438,14 @@
     &:hover {
       @media (hover: hover) {
         opacity: 100%;
+      }
+    }
+  }
+  .hover\:shadow-\[0_0_10px_\#00ff88\] {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow: 0 0 10px var(--tw-shadow-color, #00ff88);
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
       }
     }
   }
@@ -1000,6 +1011,68 @@ body::-webkit-scrollbar-track {
 .efeito_luz_rodape {
   position: absolute;
   bottom: calc(calc(1/5 * 100%) * -1);
+}
+.acordeao_termo_politica {
+  margin-top: calc(var(--spacing) * 6);
+}
+.titulo_termo_politica {
+  font-family: var(--font-inter);
+  font-size: 25pt;
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+}
+.texto_termo_politica {
+  font-family: var(--font-inter);
+  --tw-font-weight: var(--font-weight-extralight);
+  font-weight: var(--font-weight-extralight);
+}
+.titulo_acordeao_termo_politica {
+  display: flex;
+  flex-direction: column;
+  padding-block: calc(var(--spacing) * 1);
+  font-family: var(--font-geist);
+  font-size: 12.5pt;
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gray-400);
+  text-transform: uppercase;
+  &::after {
+    content: var(--tw-content);
+    width: calc(2/4 * 100%);
+  }
+  &::after {
+    content: var(--tw-content);
+    border-radius: calc(infinity * 1px);
+  }
+  &::after {
+    content: var(--tw-content);
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  &::after {
+    content: var(--tw-content);
+    border-color: var(--color-gray-400);
+  }
+  &::after {
+    content: var(--tw-content);
+    text-align: center;
+  }
+  &::after {
+    content: var(--tw-content);
+    --tw-content: '';
+    content: var(--tw-content);
+  }
+}
+.texto_acordeao_termo_politica {
+  font-family: var(--font-inter);
+  --tw-font-weight: var(--font-weight-extralight);
+  font-weight: var(--font-weight-extralight);
+}
+.acordeao_termo_politica li {
+  margin-left: calc(var(--spacing) * 7);
+  font-family: var(--font-inter);
+  --tw-font-weight: var(--font-weight-extralight);
+  font-weight: var(--font-weight-extralight);
 }
 @property --tw-border-style {
   syntax: "*";

@@ -246,3 +246,27 @@ body::-webkit-scrollbar-track {
 .efeito_luz_rodape {
     @apply absolute -bottom-1/5
 }
+
+.acordeao_termo_politica {
+    @apply mt-6
+}
+
+.titulo_termo_politica {
+    @apply font-inter font-bold text-[25pt]
+}
+
+.texto_termo_politica {
+    @apply font-inter font-extralight
+}
+
+.titulo_acordeao_termo_politica {
+    @apply font-geist uppercase flex flex-col font-bold text-[12.5pt] text-gray-400 after:content-[''] py-1 after:border-1 after:border-gray-400 after:w-2/4 after:rounded-full after:text-center
+}
+
+.texto_acordeao_termo_politica {
+    @apply font-inter font-extralight 
+}
+
+.acordeao_termo_politica li {
+    @apply font-extralight font-inter ml-7
+}

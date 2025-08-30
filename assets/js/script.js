@@ -94,7 +94,7 @@ const observador = new IntersectionObserver(entrar => {
 document.querySelectorAll(".card_fundador").forEach(cards => observador.observe(cards))
 
 const video = document.querySelector("video")
-const play_pausa = document.querySelector(".fa-play, .fa-pause")
+const play_pausa = document.querySelector(".icone_video_play, .fa-pause")
 
 video.muted = false 
 video.volume = 1
@@ -105,23 +105,23 @@ function play_pausar() {
     if (playing) {
         video.pause();
         play_pausa.classList.remove('fa-pause');
-        play_pausa.classList.add('fa-play');
+        play_pausa.classList.add('icone_video_play');
     }
     else {
         video.play();
         play_pausa.classList.add('fa-pause');
-        play_pausa.classList.remove('fa-play');
+        play_pausa.classList.remove('icone_video_play');
     }
 }
 
 video.addEventListener('play', () => {
-    play_pausa.classList.remove('fa-play');
+    play_pausa.classList.remove('icone_video_play');
     play_pausa.classList.add('fa-pause');
 });
 
 video.addEventListener('pause', () => {
     play_pausa.classList.remove('fa-pause');
-    pla_pausa.classList.add('fa-play');
+    pla_pausa.classList.add('icone_video_play');
 });
 
 play_pausa.addEventListener("click", play_pausar)
