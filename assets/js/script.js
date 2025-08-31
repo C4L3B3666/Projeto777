@@ -93,6 +93,7 @@ const observador = new IntersectionObserver(entrar => {
 }, {threshold: 0.7});
 document.querySelectorAll(".card_fundador").forEach(cards => observador.observe(cards))
 
+
 const video = document.querySelector("video")
 const play_pausa = document.querySelector(".icone_video_play, .fa-pause")
 
@@ -101,7 +102,7 @@ video.volume = 1
 
 function play_pausar() {
     const playing = !video.paused && !video.ended
-
+    
     if (playing) {
         video.pause();
         play_pausa.classList.remove('fa-pause');

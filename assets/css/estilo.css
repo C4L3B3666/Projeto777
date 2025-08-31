@@ -247,8 +247,16 @@ body::-webkit-scrollbar-track {
     @apply absolute -bottom-1/5
 }
 
+.body_termo_politica {
+    @apply bg-center bg-cover bg-no-repeat bg-[url('../img/bg_main.png')]
+}
+
+.efeito_luz_termos_politica {
+    @apply absolute -top-6 right-0
+}
+
 .acordeao_termo_politica {
-    @apply mt-6
+    @apply mt-10
 }
 
 .titulo_termo_politica {
@@ -260,11 +268,10 @@ body::-webkit-scrollbar-track {
 }
 
 .titulo_acordeao_termo_politica {
-    @apply font-geist uppercase flex flex-col font-bold text-[12.5pt] text-gray-400 after:content-[''] py-1 after:border-1 after:border-gray-400 after:w-2/4 after:rounded-full after:text-center
+    @apply font-geist uppercase flex flex-col font-bold text-[12.5pt] text-[#40E164] after:content-[''] py-1 after:border-1 after:border-[#11a531] after:w-2/4 after:rounded-full after:text-center duration-500 ease-in-out
 }
-
 .texto_acordeao_termo_politica {
-    @apply font-inter font-extralight 
+    @apply font-inter font-extralight
 }
 
 .acordeao_termo_politica li {

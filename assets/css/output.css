@@ -26,6 +26,7 @@
     --radius-lg: 0.5rem;
     --radius-2xl: 1rem;
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
     --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     --animate-bounce: bounce 1s infinite;
@@ -226,6 +227,9 @@
   }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
   }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
@@ -1012,8 +1016,19 @@ body::-webkit-scrollbar-track {
   position: absolute;
   bottom: calc(calc(1/5 * 100%) * -1);
 }
+.body_termo_politica {
+  background-image: url('../img/bg_main.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.efeito_luz_termos_politica {
+  position: absolute;
+  top: calc(var(--spacing) * -6);
+  right: calc(var(--spacing) * 0);
+}
 .acordeao_termo_politica {
-  margin-top: calc(var(--spacing) * 6);
+  margin-top: calc(var(--spacing) * 10);
 }
 .titulo_termo_politica {
   font-family: var(--font-inter);
@@ -1034,8 +1049,12 @@ body::-webkit-scrollbar-track {
   font-size: 12.5pt;
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
-  color: var(--color-gray-400);
+  color: #40E164;
   text-transform: uppercase;
+  --tw-duration: 500ms;
+  transition-duration: 500ms;
+  --tw-ease: var(--ease-in-out);
+  transition-timing-function: var(--ease-in-out);
   &::after {
     content: var(--tw-content);
     width: calc(2/4 * 100%);
@@ -1051,7 +1070,7 @@ body::-webkit-scrollbar-track {
   }
   &::after {
     content: var(--tw-content);
-    border-color: var(--color-gray-400);
+    border-color: #11a531;
   }
   &::after {
     content: var(--tw-content);
