@@ -281,3 +281,7 @@ body::-webkit-scrollbar-track {
 .subtitulo_politica {
     @apply text-[#40E164] font-geist font-bold
 }
+
+.efeito_luz_preloader {
+    @apply absolute -bottom-20 w-2xl
+}
