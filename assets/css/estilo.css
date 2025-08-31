@@ -277,3 +277,7 @@ body::-webkit-scrollbar-track {
 .acordeao_termo_politica li {
     @apply font-extralight font-inter ml-7
 }
+
+.subtitulo_politica {
+    @apply text-[#40E164] font-geist font-bold
+}

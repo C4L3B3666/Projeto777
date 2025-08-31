@@ -234,6 +234,9 @@
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
+  .ml-3 {
+    margin-left: calc(var(--spacing) * 3);
+  }
   .flex {
     display: flex;
   }
@@ -1092,6 +1095,12 @@ body::-webkit-scrollbar-track {
   font-family: var(--font-inter);
   --tw-font-weight: var(--font-weight-extralight);
   font-weight: var(--font-weight-extralight);
+}
+.subtitulo_politica {
+  font-family: var(--font-geist);
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+  color: #40E164;
 }
 @property --tw-border-style {
   syntax: "*";
