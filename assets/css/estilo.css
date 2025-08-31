@@ -294,10 +294,31 @@ body::-webkit-scrollbar-track {
     @apply h-[550px] rounded-2xl
 }
 
-.nav_inputs {
-    @apply flex flex-col flex-wrap items-center
+.form {
+    @apply w-[600px]
 }
 
 .div_content_nav_inputs {
     @apply flex w-full justify-center items-center gap-10
+}
+
+.nav_inputs {
+    @apply flex flex-col flex-wrap items-center relative
+}
+
+.input_text {
+    @apply border-2 border-[#2E2C2C] outline-none font-inter h-[34px] px-2 bg-transparent focus:border-[#40E164] hover:border-[#40E164] not-placeholder-shown:border-[#40E164] duration-1000 text-[11.5pt]
+}
+
+.input_text:focus + .label_form,
+.input_text:not(:placeholder-shown) + .label_form {
+    @apply text-[#40E164] -top-3 bg-[#131313] text-[8pt]
+}
+
+.info_input_form {
+    @apply text-[8pt] font-geist font-medium
+}
+
+.label_form {
+    @apply font-bold font-inter absolute top-1 left-2 duration-500 px-1
 }

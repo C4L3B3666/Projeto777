@@ -16,16 +16,45 @@
             <img src="../assets/img/img_1.jpg" alt="" srcset="" class="img_side_form">
         </div>
         <div>
-            <form action="#" class="w-[600px]">
-                <h1 class="font-inter font-bold text-2xl"><span class="texto_personalizado">Bem-aventurado!</span> Crie a sua conta e lembre-se que <span class="texto_personalizado">teu palpite pode mudar a tua vida</span> em apenas 10 dias.</h1>
-                <div class="div_content_nav_inputs">
+            <form action="#" class="form">
+                <h1 class="font-inter font-bold text-2xl"><span class="texto_personalizado">Bem-aventurado!</span> Crie a sua conta e lembre-se que <span class="textoGradiente">teu palpite pode mudar a tua vida</span> em apenas 10 dias. Ou <a href="#"><span class="texto_personalizado">inicie sessão</span></a> agora mesmo.</h1>
+                <div class="div_content_nav_inputs mt-2">
                     <nav class="nav_inputs">
-                        <input type="text">
-                        <label for="#">Nome Completo</label>
+                        <input type="text" placeholder=" " id="nome_completo"  class="input_text" required>
+                        <label for="nome_completo" class="label_form">Nome Completo *</label>
+                        <small class="info_input_form">Será usado para a sua identificação formal</small>
                     </nav>
                     <nav class="nav_inputs">
-                        <input type="text">
-                        <label for="#">Apelido / Alcunha</label>
+                        <input type="text" placeholder=" " id="apelido"  class="input_text" required>
+                        <label for="apelido" class="label_form">Apelido *</label>
+                        <small class="info_input_form">Nome fictício para identificação pública</small>
+                    </nav>
+                </div>
+
+                <div class="div_content_nav_inputs mt-4">
+                    <nav class="nav_inputs">
+                        <input type="text" placeholder=" " id="telefone"  class="input_text" required>
+                        <label for="telefone" class="label_form">Número de Telefone *</label>
+                        <small class="info_input_form">Contato ou aviso de premiação</small>
+                    </nav>
+                    <nav class="nav_inputs">
+                        <input type="text" placeholder=" " id="email"  class="input_text">
+                        <label for="email" class="label_form">E-mail</label>
+                        <small class="info_input_form">Contato direito ou aviso de premiação</small>
+                    </nav>
+                </div>
+
+                <div class="flex flex-col items-center justify-center mt-6">
+                    <p class="font-inter font-bold text-[#40E164]">Queremos saber um pouco sobre você... *</p>
+                    <textarea name="" id="" placeholder="Por que você quer participar do 777?" class="h-40 w-80 border-[#2E2C2C] border-2 rounded-lg p-2 outline-none font-inter resize-none" required></textarea>
+                </div>
+
+                <p class="font-inter font-extralight mt-2.5">Ao criar sua conta, você declara que leu e concorda com a utilização das informações fornecidas, conforme previsto na <a href="politica_privacidade.html" class="text-gray-400">Política de Privacidade</a> e nos <a href="termos_condicoes.html" class="text-gray-400">Termos e Condições</a> da 777PY</p>
+
+                <div class="flex items-end justify-end">
+                    <nav class="nav_botoes">
+                        <a href="#"><button class="button button_secundary">Cancelar</button></a>
+                        <a href="#assistir_video"><button class="button">Criar Conta<i class="fa-solid fa-play"></i></button></a>
                     </nav>
                 </div>
             </form>
