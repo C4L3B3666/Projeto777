@@ -343,6 +343,9 @@
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
   }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
@@ -1174,7 +1177,6 @@ body::-webkit-scrollbar-track {
   border-style: var(--tw-border-style);
   border-width: 2px;
   border-color: #2E2C2C;
-  padding: calc(var(--spacing) * 4);
   --tw-backdrop-blur: blur(var(--blur-lg));
   -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
@@ -1182,11 +1184,14 @@ body::-webkit-scrollbar-track {
 .img_side_form {
   height: 100%;
   border-radius: var(--radius-2xl);
+  padding: calc(var(--spacing) * 4);
   @media (width >= 40rem) {
     height: 550px;
   }
 }
 .form {
+  position: relative;
+  overflow: hidden;
   @media (width >= 40rem) {
     width: 600px;
   }
@@ -1290,6 +1295,11 @@ body::-webkit-scrollbar-track {
   &:focus {
     border-color: #40E164;
   }
+}
+.efeito_luz_form {
+  position: absolute;
+  right: calc(var(--spacing) * -8);
+  bottom: calc(var(--spacing) * -5);
 }
 @property --tw-rotate-x {
   syntax: "*";
