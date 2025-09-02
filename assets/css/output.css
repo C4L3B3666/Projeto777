@@ -273,6 +273,9 @@
   .w-32 {
     width: calc(var(--spacing) * 32);
   }
+  .w-\[485px\] {
+    width: 485px;
+  }
   .w-max {
     width: max-content;
   }
@@ -428,6 +431,9 @@
   .uppercase {
     text-transform: uppercase;
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .opacity-75 {
     opacity: 75%;
   }
@@ -485,24 +491,9 @@
       }
     }
   }
-  .sm\:m-auto {
-    @media (width >= 40rem) {
-      margin: auto;
-    }
-  }
   .sm\:mt-4 {
     @media (width >= 40rem) {
       margin-top: calc(var(--spacing) * 4);
-    }
-  }
-  .sm\:block {
-    @media (width >= 40rem) {
-      display: block;
-    }
-  }
-  .sm\:h-screen {
-    @media (width >= 40rem) {
-      height: 100vh;
     }
   }
   .sm\:items-end {
@@ -510,13 +501,28 @@
       align-items: flex-end;
     }
   }
-  .sm\:justify-end {
-    @media (width >= 40rem) {
+  .md\:m-auto {
+    @media (width >= 48rem) {
+      margin: auto;
+    }
+  }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
+    }
+  }
+  .md\:h-screen {
+    @media (width >= 48rem) {
+      height: 100vh;
+    }
+  }
+  .md\:justify-end {
+    @media (width >= 48rem) {
       justify-content: flex-end;
     }
   }
-  .sm\:text-2xl {
-    @media (width >= 40rem) {
+  .md\:text-2xl {
+    @media (width >= 48rem) {
       font-size: var(--text-2xl);
       line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
@@ -1204,18 +1210,27 @@ body::-webkit-scrollbar-track {
       filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
     }
   }
-  @media (width >= 40rem) {
+  @media (width >= 48rem) {
     height: 605px;
   }
 }
 .form {
   position: relative;
   overflow: hidden;
-  @media (width >= 40rem) {
+  @media (width >= 48rem) {
     height: 610px;
   }
-  @media (width >= 40rem) {
+  @media (width >= 48rem) {
     width: 600px;
+  }
+}
+.form_login {
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: space-around;
+  @media (width >= 48rem) {
+    height: 620px;
   }
 }
 .div_content_nav_inputs {
@@ -1224,13 +1239,13 @@ body::-webkit-scrollbar-track {
   align-items: center;
   justify-content: center;
   gap: calc(var(--spacing) * 4);
-  @media (width >= 40rem) {
+  @media (width >= 48rem) {
     width: 100%;
   }
-  @media (width >= 40rem) {
+  @media (width >= 48rem) {
     flex-direction: row;
   }
-  @media (width >= 40rem) {
+  @media (width >= 48rem) {
     gap: calc(var(--spacing) * 10);
   }
 }
@@ -1239,7 +1254,7 @@ body::-webkit-scrollbar-track {
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media (width >= 40rem) {
+  @media (width >= 48rem) {
     flex-wrap: wrap;
   }
 }

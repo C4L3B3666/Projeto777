@@ -270,6 +270,7 @@ body::-webkit-scrollbar-track {
 .titulo_acordeao_termo_politica {
     @apply font-geist uppercase flex flex-col font-bold text-[12.5pt] text-[#40E164] after:content-[''] py-1 after:border-1 after:border-[#11a531] after:w-2/4 after:rounded-full after:text-center duration-500 ease-in-out
 }
+
 .texto_acordeao_termo_politica {
     @apply font-inter font-extralight
 }
@@ -291,19 +292,23 @@ body::-webkit-scrollbar-track {
 }
 
 .img_side_form {
-    @apply sm:h-[605px] rounded-3xl h-full p-4 grayscale-100 hover:grayscale-0 duration-700 transition-all ease-linear
+    @apply md:h-[605px] rounded-3xl h-full p-4 grayscale-100 hover:grayscale-0 duration-700 transition-all ease-linear
 }
 
 .form {
-    @apply sm:w-[600px] sm:h-[610px] relative overflow-hidden
+    @apply md:w-[600px] md:h-[610px] relative overflow-hidden
+}
+
+.form_login {
+    @apply  flex flex-col justify-around h-[90vh] md:h-[620px]
 }
 
 .div_content_nav_inputs {
-    @apply flex sm:w-full sm:flex-row justify-center items-center sm:gap-10 flex-col gap-4
+    @apply flex md:w-full md:flex-row justify-center items-center md:gap-10 flex-col gap-4
 }
 
 .nav_inputs {
-    @apply flex flex-col sm:flex-wrap items-center relative
+    @apply flex flex-col md:flex-wrap items-center relative
 }
 
 .input_text {
