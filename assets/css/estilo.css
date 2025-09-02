@@ -291,19 +291,19 @@ body::-webkit-scrollbar-track {
 }
 
 .img_side_form {
-    @apply h-[550px] rounded-2xl
+    @apply sm:h-[550px] rounded-2xl h-full
 }
 
 .form {
-    @apply w-[600px]
+    @apply sm:w-[600px]
 }
 
 .div_content_nav_inputs {
-    @apply flex w-full justify-center items-center gap-10
+    @apply flex sm:w-full sm:flex-row justify-center items-center sm:gap-10 flex-col gap-4
 }
 
 .nav_inputs {
-    @apply flex flex-col flex-wrap items-center relative
+    @apply flex flex-col sm:flex-wrap items-center relative
 }
 
 .input_text {
@@ -321,4 +321,8 @@ body::-webkit-scrollbar-track {
 
 .label_form {
     @apply font-bold font-inter absolute top-1 left-2 duration-500 px-1
+}
+
+.text_area_sign_in {
+    @apply  focus:border-[#40E164] hover:border-[#40E164] not-placeholder-shown:border-[#40E164] duration-1000 text-[11.5pt] h-40 w-80 border-[#2E2C2C] border-2 rounded-lg p-2 outline-none font-inter resize-none
 }
