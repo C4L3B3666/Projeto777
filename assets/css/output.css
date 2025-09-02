@@ -26,6 +26,7 @@
     --font-weight-extrabold: 800;
     --radius-lg: 0.5rem;
     --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
@@ -238,6 +239,9 @@
   }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
+  }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
@@ -1183,15 +1187,33 @@ body::-webkit-scrollbar-track {
 }
 .img_side_form {
   height: 100%;
-  border-radius: var(--radius-2xl);
+  border-radius: var(--radius-3xl);
   padding: calc(var(--spacing) * 4);
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 700ms;
+  transition-duration: 700ms;
+  --tw-ease: linear;
+  transition-timing-function: linear;
+  &:hover {
+    @media (hover: hover) {
+      --tw-grayscale: grayscale(0%);
+      filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+    }
+  }
   @media (width >= 40rem) {
-    height: 550px;
+    height: 605px;
   }
 }
 .form {
   position: relative;
   overflow: hidden;
+  @media (width >= 40rem) {
+    height: 610px;
+  }
   @media (width >= 40rem) {
     width: 600px;
   }

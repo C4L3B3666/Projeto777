@@ -291,11 +291,11 @@ body::-webkit-scrollbar-track {
 }
 
 .img_side_form {
-    @apply sm:h-[550px] rounded-2xl h-full p-4
+    @apply sm:h-[605px] rounded-3xl h-full p-4 grayscale-100 hover:grayscale-0 duration-700 transition-all ease-linear
 }
 
 .form {
-    @apply sm:w-[600px] relative overflow-hidden
+    @apply sm:w-[600px] sm:h-[610px] relative overflow-hidden
 }
 
 .div_content_nav_inputs {
