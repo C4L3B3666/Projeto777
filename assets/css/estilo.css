@@ -328,5 +328,5 @@ body::-webkit-scrollbar-track {
 }
 
 .efeito_luz_form {
-    @apply absolute -bottom-5 -right-8
+    @apply absolute -bottom-5 -right-8 opacity-95 animate-none
 }

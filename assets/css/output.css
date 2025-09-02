@@ -1322,6 +1322,8 @@ body::-webkit-scrollbar-track {
   position: absolute;
   right: calc(var(--spacing) * -8);
   bottom: calc(var(--spacing) * -5);
+  animation: none;
+  opacity: 95%;
 }
 @property --tw-rotate-x {
   syntax: "*";
