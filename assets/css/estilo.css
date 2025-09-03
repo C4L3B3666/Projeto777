@@ -339,3 +339,11 @@ body::-webkit-scrollbar-track {
 .efeito_luz_form {
     @apply absolute -bottom-5 -right-8 opacity-95 animate-none
 }
+
+.info_user {
+    @apply font-inter text-[12.5pt]
+}
+
+.dados_user {
+    @apply font-bold text-[#40E164] font-geist
+}

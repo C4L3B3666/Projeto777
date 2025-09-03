@@ -11,6 +11,61 @@
     <script src="../assets/js/script.js" defer></script>
 </head>
 <body class="bg-[#131313]">
-   
+    <div class="border-2 border-[#2E2C2C] m-4 p-4 rounded-2xl">
+        <div class="hidden"></div>
+        <div>
+            <h2 class="font-geist font-bold text-2xl">Olá <span class="texto_personalizado">Calebe Lukombo</span>! Pronto para <span class="texto_personalizado">palpitar</span> novamente?</h2>
+            <div class="mt-4">
+                <div>
+                    <h5 class="info_user"><span class="dados_user">Alcunha:</span> CommandoXR</h5>
+                    <h5 class="info_user"><span class="dados_user">Número de Telefone:</span> 999 111 000</h5>
+                    <h5 class="info_user"><span class="dados_user">Total de Palpites Enviados:</span> 7</h5>
+                    <h5 class="info_user"><span class="dados_user">Palpites Errados (total):</span> 1</h5>
+                    <h5 class="info_user"><span class="dados_user">Palpites Acertados (total):</span> 6</h5>
+                    <h5 class="info_user"><span class="dados_user">Fase Atual:</span> Nzambi</h5>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-geist mt-4 font-bold">Envie o seu <span class="texto_personalizado">palpite</span> abaixo.</h2>
+                    <form action="#">
+                        <nav>
+                            <h6>Teu palpite inclui qual modalidade *</h6>
+                            <nav>
+                                <input type="radio" name="modalidade" id="futebol">
+                                <label for="futebol">Futebol</label>
+                                
+                                <input type="radio" name="modalidade" id="boxe">
+                                <label for="boxe">Boxe</label>
+                                
+                                <input type="radio" name="modalidade" id="basquetebol">
+                                <label for="basquetebol">Basquetebol</label>
+                                
+                                <input type="radio" name="modalidade" id="combinacao">
+                                <label for="combinacao">Combinei várias modalidades</label>
+                            </nav>
+                            <small>Necessário para entender suas preferências</small>
+                        </nav>
+                        
+                        <nav>
+                            <h6>Carregue aqui o seu palpite *</h6>
+                            <nav>
+                                <input type="file" name="palpite" id="palpite">
+                                <label for="palpite">Clique para carregar o palpite (imagem) *</label>
+                            </nav>
+                            <small>Necessário para o registro visual do teu palpite</small>
+                        </nav>
+
+                        <nav>
+                            <h6>Conte-nos sobre a sua estratégia *</h6>
+                            <nav>
+                                <textarea name="texto_estrategia" id="texto_estrategia" placeholder="Por que você acredita nesse palpite?"></textarea>
+                            </nav>
+                            <small>Útil para entender o teu raciocínio</small>
+                        </nav>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
