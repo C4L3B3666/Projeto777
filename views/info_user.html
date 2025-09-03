@@ -10,62 +10,74 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="../assets/js/script.js" defer></script>
 </head>
-<body class="bg-[#131313]">
-    <div class="border-2 border-[#2E2C2C] m-4 p-4 rounded-2xl">
-        <div class="hidden"></div>
+<body class="bg-[#131313] px-6">
+    <nav class="my-8">
         <div>
-            <h2 class="font-geist font-bold text-2xl">Olá <span class="texto_personalizado">Calebe Lukombo</span>! Pronto para <span class="texto_personalizado">palpitar</span> novamente?</h2>
-            <div class="mt-4">
-                <div>
-                    <h5 class="info_user"><span class="dados_user">Alcunha:</span> CommandoXR</h5>
-                    <h5 class="info_user"><span class="dados_user">Número de Telefone:</span> 999 111 000</h5>
-                    <h5 class="info_user"><span class="dados_user">Total de Palpites Enviados:</span> 7</h5>
-                    <h5 class="info_user"><span class="dados_user">Palpites Errados (total):</span> 1</h5>
-                    <h5 class="info_user"><span class="dados_user">Palpites Acertados (total):</span> 6</h5>
-                    <h5 class="info_user"><span class="dados_user">Fase Atual:</span> Nzambi</h5>
-                </div>
-                <div>
-                    <h2 class="text-2xl font-geist mt-4 font-bold">Envie o seu <span class="texto_personalizado">palpite</span> abaixo.</h2>
-                    <form action="#">
-                        <nav>
-                            <h6>Teu palpite inclui qual modalidade *</h6>
-                            <nav>
-                                <input type="radio" name="modalidade" id="futebol">
-                                <label for="futebol">Futebol</label>
-                                
-                                <input type="radio" name="modalidade" id="boxe">
-                                <label for="boxe">Boxe</label>
-                                
-                                <input type="radio" name="modalidade" id="basquetebol">
-                                <label for="basquetebol">Basquetebol</label>
-                                
-                                <input type="radio" name="modalidade" id="combinacao">
-                                <label for="combinacao">Combinei várias modalidades</label>
-                            </nav>
-                            <small>Necessário para entender suas preferências</small>
-                        </nav>
-                        
-                        <nav>
-                            <h6>Carregue aqui o seu palpite *</h6>
-                            <nav>
-                                <input type="file" name="palpite" id="palpite">
-                                <label for="palpite">Clique para carregar o palpite (imagem) *</label>
-                            </nav>
-                            <small>Necessário para o registro visual do teu palpite</small>
-                        </nav>
-
-                        <nav>
-                            <h6>Conte-nos sobre a sua estratégia *</h6>
-                            <nav>
-                                <textarea name="texto_estrategia" id="texto_estrategia" placeholder="Por que você acredita nesse palpite?"></textarea>
-                            </nav>
-                            <small>Útil para entender o teu raciocínio</small>
-                        </nav>
-
-                    </form>
-                </div>
-            </div>
+            <h1 class="text-center text-[19pt] font-inter font-bold">Olá <span class="texto_personalizado">Calebe Lukombo</span>! Sabemos que você está preparado para se tornar o <span class="texto_personalizado">próximo milionário</span>.</h1>
+            <p class="textoGradiente font-geist text-center py-1">2.5 milhões estão chegando na sua direção!</p>
         </div>
-    </div>
+        <div class="flex flex-col items-center">
+            <div class="border-2 border-[#2E2C2C] rounded-full p-2">
+                <img src="../assets/img/user.jpg" alt="" srcset="" class="h-40 w-40 rounded-full">
+            </div>
+
+            <div class="mt-3">
+                <nav class="flex flex-wrap gap-2 items-center justify-center">
+                    <div class="card_user_info">
+                        <div class="card_user_topo">
+                            <h5>Alcunha</h5>
+                            <p>X</p>
+                        </div>
+                        <p class="dado_user_info textoGradiente">CommandX</p>
+                    </div>
+                    
+                    <div class="card_user_info">
+                        <div class="card_user_topo">
+                            <h5>Fase Atual</h5>
+                            <p>X</p>
+                        </div>
+                        <p class="dado_user_info textoGradiente">Nzambi</p>
+                    </div>
+                    
+                    <div class="card_user_info">
+                        <div class="card_user_topo">
+                            <h5>Total Enviado (palpites)</h5>
+                            <p>X</p>
+                        </div>
+                        <p class="dado_user_info textoGradiente">10</p>
+                    </div>
+                    
+                    <div class="card_user_info">
+                        <div class="card_user_topo">
+                            <h5>Total Certo (palpites)</h5>
+                            <p>X</p>
+                        </div>
+                        <p class="dado_user_info textoGradiente">10</p>
+                    </div>
+                    
+                    <div class="card_user_info">
+                        <div class="card_user_topo">
+                            <h5>Total Erros (palpites)</h5>
+                            <p>X</p>
+                        </div>
+                        <p class="dado_user_info textoGradiente">2</p>
+                    </div>
+                    
+                </nav>
+
+                <!-- <nav>
+                    <div>
+
+                    </div>
+
+                    <div>
+                        <form action=""></form>
+                    </div>
+                </nav> -->
+            </div>
+            
+            <div></div>
+        </div>
+    </nav>
 </body>
 </html>

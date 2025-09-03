@@ -347,3 +347,19 @@ body::-webkit-scrollbar-track {
 .dados_user {
     @apply font-bold text-[#40E164] font-geist
 }
+
+.card_user_info {
+    @apply border-2 border-[#2E2C2C] w-[48.5%] h-24 p-1.5 rounded-lg flex justify-between flex-col
+}
+
+.card_user_topo {
+    @apply flex justify-between
+}
+
+.card_user_topo h5 {
+    @apply font-inter font-bold text-[#40E164] text-[11pt]
+}
+
+.dado_user_info {
+    @apply font-geist font-bold text-[14pt]
+}
