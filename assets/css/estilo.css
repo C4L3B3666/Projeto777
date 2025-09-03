@@ -24,15 +24,15 @@ body::-webkit-scrollbar-track {
 
 .menu.ativo .menu_mobile {
     clip-path: circle(1000px at 90% -0);
-    @apply pointer-events-auto opacity-100
+    @apply pointer-events-auto opacity-100;
 }
 
 .menu.ativo .link_menu {
-    @apply opacity-100
+    @apply opacity-100 
 }
 
 .link_menu {
-    @apply text-white font-inter font-medium hover:text-[#40E164] active:hover:text-[#40E164] opacity-0 transition-opacity duration-700
+    @apply text-white font-inter font-medium hover:text-[#40E164] active:hover:text-[#40E164] opacity-0 transition-opacity duration-700 sm:opacity-100
 }
 
 .button {
@@ -72,7 +72,11 @@ body::-webkit-scrollbar-track {
 }
 
 .texto_lateral_main {
-    @apply font-inter py-1.5 font-bold text-white
+    @apply font-inter py-1.5 font-bold text-white sm:py-0
+}
+
+.conteudo_lateral_main {
+    @apply sm:flex sm:justify-between sm:gap-4
 }
 
 .texto_destaque_lateral {
@@ -80,7 +84,7 @@ body::-webkit-scrollbar-track {
 }
 
 .card_funcionamento {
-    @apply p-4 w-3/4 rounded-lg my-2 relative z-1 h-[373px] shadow-[6px_0_3px_#000]
+    @apply p-4 w-3/4 rounded-lg my-2 relative z-1 h-[373px] shadow-[6px_0_3px_#000] sm:w-[280px] sm:mx-4
 }
 
 .numero_card_funcionamento, .card_funcionamento {
@@ -112,15 +116,15 @@ body::-webkit-scrollbar-track {
 }
 
 #como_funciona.expandido .content_cards_funcionamento {
-    @apply h-[2050px] 
+    @apply h-[2050px]  sm:h-[800px]
 }
 
 .content_cards_funcionamento {
-    @apply flex items-center justify-start flex-col h-[285px] overflow-hidden after:overflow-hidden after:content-[''] after:absolute after:bottom-0 after:w-full after:h-[30px] after:z-[1] after:pointer-events-none transition-all duration-500 after:bg-[linear-gradient(to_top,_#131313_10%,_#131313_20%,_#131313_30%,_transparent_100%)] after:right-0 
+    @apply flex items-center justify-start flex-col h-[285px] overflow-hidden after:overflow-hidden after:content-[''] after:absolute after:bottom-0 after:w-full after:h-[30px] after:z-[1] after:pointer-events-none transition-all duration-500 after:bg-[linear-gradient(to_top,_#131313_10%,_#131313_20%,_#131313_30%,_transparent_100%)] after:right-0 sm:flex-row sm:justify-center sm:flex-wrap sm:h-[430px] sm:w-[75%]
 }
 
 .texto_efeito {
-    @apply text-[#2E2C2C] text-[14pt] font-inter text-center my-8 font-bold transition-all duration-500 ease-out opacity-85
+    @apply text-[#2E2C2C] text-[14pt] font-inter text-center my-8 font-bold transition-all duration-500 ease-out opacity-85 sm:text-left
 }
 
 .texto_efeito.ativo {
@@ -128,7 +132,7 @@ body::-webkit-scrollbar-track {
 }
 
 .card_fundador {
-    @apply bg-[#131313] border-2 border-[#2E2C2C] rounded-2xl w-10/12 h-[570px] overflow-hidden p-3 sticky text-center shadow-[6px_0_3px_#000] z-0 my-6 top-20 transition-all duration-300 ease-linear
+    @apply bg-[#131313] border-2 border-[#2E2C2C] rounded-2xl w-10/12 h-[570px] overflow-hidden p-3 sticky text-center shadow-[6px_0_3px_#000] z-0 my-6 top-20 transition-all duration-300 ease-linear sm:w-[340px] sm:top-24 sm:my-8
 }
 
 .content_efeito_card_fundador {
@@ -155,7 +159,7 @@ body::-webkit-scrollbar-track {
 }
 
 .content_efeito_card_fundador_2 {
-    @apply left-2 bottom-3 gap-2.5 flex flex-col absolute items-center
+    @apply left-2 bottom-3 gap-2.5 flex flex-col absolute items-center sm:flex-row
 }
 
 .card_fundador .imagem_fundador {
@@ -184,11 +188,11 @@ body::-webkit-scrollbar-track {
 }
 
 .secao_frase {
-    @apply py-8
+    @apply py-8 sm:flex sm:items-center sm:justify-center sm:py-10
 }
 
 .secao_frase p {
-    @apply font-geist text-white text-[20pt] font-bold text-center
+    @apply font-geist text-white text-[20pt] font-bold text-center sm:text-[27pt] sm:w-[75%]
 }
 
 .textoGradiente {
@@ -196,7 +200,7 @@ body::-webkit-scrollbar-track {
 }
 
 .carousel_container {
-    @apply w-[100%] relative flex m-auto items-center justify-center
+    @apply w-[100%] relative flex m-auto items-center justify-center sm:w-[75%]
 }
 
 .contentor_card_pergunta {
@@ -216,7 +220,7 @@ body::-webkit-scrollbar-track {
 }
 
 .card_pergunta  {
-    @apply min-w-[341px] p-4 m-2 mb-6 mx-5 rounded-lg border-2 border-[#075719] shadow-[6px_0_3px_#000] h-72 snap-start relative z-0
+    @apply min-w-[341px] p-4 m-2 mb-6 mx-5 rounded-lg border-2 border-[#075719] shadow-[6px_0_3px_#000] h-72 snap-start relative z-0 sm:min-w-[290px] sm:h-80
 }
 
 .efeito_card_pergunta {
@@ -236,7 +240,7 @@ body::-webkit-scrollbar-track {
 }
 
 .social_rodape {
-    @apply text-[#40E164] hover:scale-110
+    @apply hover:text-[#40E164] hover:scale-110 text-gray-400
 }
 
 .efeito_luz {

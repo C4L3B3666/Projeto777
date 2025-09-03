@@ -132,7 +132,11 @@
                         <a href="#" rel="noopener"><i class="fa-solid fa-phone social_rodape"></i></a>
                     </div>
                 </div>
-                <small class="text-center flex items-center justify-center text-white font-geist mt-4 font-extralight">&copy;2025 — <span class="font-bold font-inter">777PY</span> — Todos os direitos reservados</small>
+                <script>
+                    var ano =  new Date;
+                    var anoAtual = ano.getFullYear();
+                    document.write("<small class='text-center flex items-center justify-center text-white font-geist mt-4 font-extralight'>" + "&copy;" + anoAtual + " — <span class='font-bold font-inter'> 777PY</span> — Todos os direitos reservados</small>")
+                </script>
             </div>
             <a href="#" target="_top"><button class="button mt-4 mb-5 animate-bounce">Me ajude a subir!</button></a>
     </footer>
