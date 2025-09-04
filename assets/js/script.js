@@ -93,36 +93,92 @@ const observador = new IntersectionObserver(entrar => {
 }, {threshold: 0.7});
 document.querySelectorAll(".card_fundador").forEach(cards => observador.observe(cards))
 
+const videoPlayer = document.getElementById("video");
+const playPauseButton = document.querySelector('.icone_play_video, .fa-pause');
+const backwardButton = document.querySelector('.icone_voltar_video');
+const forwardButton = document.querySelector('.icone_avancar_video');
+const fullscreenButton = document.querySelector('.icone_expandir_video, .fa-compress'); // Botão fullscreen
 
-const video = document.querySelector("video")
-const play_pausa = document.querySelector(".icone_video_play, .fa-pause")
+// Garante que o vídeo tenha som
+videoPlayer.muted = false;
+videoPlayer.volume = 1;
 
-video.muted = false 
-video.volume = 1
+// Alterna entre play e pause
+function togglePlayPause() {
+    const isPlaying = !videoPlayer.paused && !videoPlayer.ended;
 
-function play_pausar() {
-    const playing = !video.paused && !video.ended
-    
-    if (playing) {
-        video.pause();
-        play_pausa.classList.remove('fa-pause');
-        play_pausa.classList.add('icone_video_play');
-    }
-    else {
-        video.play();
-        play_pausa.classList.add('fa-pause');
-        play_pausa.classList.remove('icone_video_play');
+    if (isPlaying) {
+        videoPlayer.pause();
+        playPauseButton.classList.remove('fa-pause');
+        playPauseButton.classList.add('icone_play_video');
+    } else {
+        videoPlayer.play();
+        playPauseButton.classList.remove('icone_play_video');
+        playPauseButton.classList.add('fa-pause');
     }
 }
 
-video.addEventListener('play', () => {
-    play_pausa.classList.remove('icone_video_play');
-    play_pausa.classList.add('fa-pause');
+// Retroceder e avançar
+function skip(seconds) {
+    videoPlayer.currentTime = Math.max(0, videoPlayer.currentTime + seconds);
+}
+
+// Ampliar (fullscreen) + play automático
+function toggleFullscreen() {
+    if (!document.fullscreenElement) {
+        // Entra em fullscreen e toca o vídeo
+        if (videoPlayer.requestFullscreen) {
+            videoPlayer.requestFullscreen();
+        } else if (videoPlayer.webkitRequestFullscreen) {
+            videoPlayer.webkitRequestFullscreen();
+        } else if (videoPlayer.msRequestFullscreen) {
+            videoPlayer.msRequestFullscreen();
+        }
+
+        videoPlayer.play(); // Play automático
+        playPauseButton.classList.remove('icone_play_video');
+        playPauseButton.classList.add('fa-pause');
+
+        fullscreenButton.classList.remove('icone_expandir_video');
+        fullscreenButton.classList.add('fa-compress');
+    } else {
+        // Sai do fullscreen
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+
+        fullscreenButton.classList.remove('fa-compress');
+        fullscreenButton.classList.add('icone_expandir_video');
+    }
+}
+
+// Atualiza o ícone se sair do fullscreen por outros meios (ex: tecla ESC)
+document.addEventListener('fullscreenchange', () => {
+    if (!document.fullscreenElement) {
+        fullscreenButton.classList.remove('fa-compress');
+        fullscreenButton.classList.add('icone_expandir_video');
+    } else {
+        fullscreenButton.classList.remove('icone_expandir_video');
+        fullscreenButton.classList.add('fa-compress');
+    }
 });
 
-video.addEventListener('pause', () => {
-    play_pausa.classList.remove('fa-pause');
-    pla_pausa.classList.add('icone_video_play');
+// Eventos
+playPauseButton.addEventListener('click', togglePlayPause);
+backwardButton.addEventListener('click', () => skip(-10));
+forwardButton.addEventListener('click', () => skip(10));
+fullscreenButton.addEventListener('click', toggleFullscreen);
+
+videoPlayer.addEventListener('play', () => {
+    playPauseButton.classList.remove('icone_play_video');
+    playPauseButton.classList.add('fa-pause');
 });
 
-play_pausa.addEventListener("click", play_pausar)
+videoPlayer.addEventListener('pause', () => {
+    playPauseButton.classList.remove('fa-pause');
+    playPauseButton.classList.add('icone_play_video');
+});
